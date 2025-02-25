@@ -1,0 +1,390 @@
+/*reset*/
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+/*------------------------------------header------------------------------------------------*/
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;   
+    padding: 10px;
+    background-color: rgb(87, 168, 221);
+    color: rgb(43, 98, 147);
+}
+
+.logo{
+    width:400px;
+    height:100px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    margin-right: 10px;
+}
+
+/*.li{
+    display:flex;
+    list-style: none;
+}
+
+.li a{ 
+    text-decoration: none;
+    color: rgb(43, 98, 147);
+    font-size: large;
+    padding: 20px;
+}*/
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/*---------------------------------------body-----------------------------------------------*/
+body{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+main {
+    display: grid;
+    grid-row: 100px 100px;
+    padding: 30px;
+    color: rgb(43, 98, 147);  
+    background-color:rgb(174, 216, 244);
+}
+
+main h1, h2{
+    text-align: center;
+}
+
+main div p{
+    padding-top: 5px;
+    font-size: medium;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.principal img{
+    width:250px;
+    height:250px;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    margin: 50px 0 0 100px;
+}
+
+.principal p{
+        font-size: x-large;
+        text-align: justify;
+        width: 600px;
+        padding: 30px;
+        margin: 30px;
+        margin-right: 60px;
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 100px, 100px;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin: 20px;
+}
+
+.intro div{
+    padding: 10px;
+    border: none;
+    border-radius: 3%;
+    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    text-align: center;
+}
+
+.intro div img{
+    width: 200px;
+    height: 100px;
+}
+
+.ofrece{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 100px, 100px;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin: 20px;
+}
+
+.ofrece div{
+    padding: 20px;
+    border: none;
+    border-radius: 3%;
+    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    text-align: center;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 50px;
+}
+
+.contacto form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width:400px;
+    color: rgb(43, 98, 147);  
+    font-size: medium;
+}
+
+.contacto iframe{
+    border: none;
+    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    margin: 20px;
+}
+
+.datos-contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 80px 0;
+    margin: 30px  0 30px 0;
+}
+
+.equipo{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    column-gap:100px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.equipo div{
+    padding: 20px;
+}
+
+.equipo img{
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    padding: 0px;
+    margin: 10px;
+}
+
+.nosotras{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    column-gap: 50px;
+    margin-top: 50px;
+}
+
+.nosotras div{
+    padding: 20px;
+}
+
+.nosotras img{
+    width:250px;
+    height:250px;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    margin-left: 100px;
+}
+
+.servicios{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 100px 100px;
+    column-gap: 20px;
+    row-gap: 60px;
+    justify-items: center;
+}
+
+.servicios img{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    padding:0px;
+    margin: 10px;
+}
+
+.turnos{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 20px;
+    justify-items: center;
+}
+
+.turnos-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    color: rgb(43, 98, 147);  
+    font-size: medium;
+    padding: 20px; 
+    margin: 20px;
+}
+
+.turnos-tel{
+    margin: 45px;
+    width: 350px;
+}
+
+.boton{
+    background-color: rgb(201, 237, 252);
+    color: rgb(43, 98, 147);
+    font-size:medium;
+    border: none;
+    border-radius: 5px;  
+    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    width: 50%;
+    padding: 5px;
+    margin: auto;
+}
+
+
+/*--------------------------------------footer-----------------------------------------------*/
+footer{  
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(87, 168, 221);   
+}
+
+.p-f{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+    color: rgb(43, 98, 147);
+}
+
+.lif{  
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.lif a{ 
+    text-decoration: none;
+    color: rgb(43, 98, 147);
+    font-size:medium;
+    margin: 15px;
+}
+
+/*-------------------------------------mediaquerie----------------------------------*/
+@media  (max-width: 500px) {
+    header{
+        flex-direction: column;
+    } 
+    
+.logo img{
+    width:350px;
+    }
+
+.nav-item a{
+    color: rgb(43, 98, 147);
+    font-size: large;
+    }
+
+/*.li{
+    margin: 20px;
+    }
+
+.li a{ 
+    font-size: medium;
+    padding: 5px;
+    }*/
+
+main {
+    grid-row: 100px 100px;
+    }
+
+main div p{
+    padding-top: 5px;
+    font-size: medium;
+    }
+
+.principal{
+    grid-template-columns: 2fr;
+    }   
+
+.principal img{
+    width:200px;
+    height:200px;
+    margin-top: 20px;
+    }
+
+.principal p{
+    font-size: large;
+    text-align: center;
+    width: 300px; 
+    margin: auto;
+    }
+
+.contacto{
+    display: grid;
+    grid-template-columns: 2fr;
+    }
+
+.contacto form{
+    width:300px;
+    margin-top:20px;
+    }
+
+.contacto iframe{
+    margin: 5px;
+    }
+
+.datos-contacto{
+    padding:20px 0 20px 0;
+    margin: auto;
+    }
+
+.equipo{
+    grid-template-columns: 2fr;
+    }
+
+.equipo div{
+    padding: 20px;
+    }
+
+.nosotras{
+    grid-template-columns: 2fr;
+    }
+    
+.nosotras img{
+    width:200px;
+    height:200px;
+    }   
+
+.servicios {
+    row-gap: 100px;
+    }
+
+
+    .turnos{
+        grid-template-columns: 2fr;
+    }  
+    
+    footer{  
+    flex-direction: column;
+    }
+
+.lif a{ 
+    margin: 5px;
+    }
