@@ -8,7 +8,7 @@
 /*------------------------------------header------------------------------------------------*/
 header{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;   
     padding: 10px;
     background-color: rgb(87, 168, 221);
@@ -52,22 +52,6 @@ body{
     height: max-content;
 }
 
-main {
-    display: grid;
-    grid-row: 100px 100px;
-    padding: 30px;
-    color: rgb(43, 98, 147);  
-    background-color:rgb(174, 216, 244);
-}
-
-main h1, h2{
-    text-align: center;
-}
-
-main div p{
-    padding-top: 5px;
-    font-size: medium;
-}
 
 .principal{
     display: grid;
@@ -81,6 +65,11 @@ main div p{
     border-radius: 5%;
     box-shadow: 0px 0px 6px rgb(23, 86, 202);
     margin: 50px 0 0 100px;
+    transition: 0.5s;
+}
+
+.principal img:hover{
+    transform:scale(1.2);  
 }
 
 .principal p{
@@ -163,7 +152,6 @@ main div p{
     display: grid;
     grid-template-columns: repeat(4,2fr);
     column-gap:100px;
-    margin-top: 20px;
     padding: 20px;
     text-align: center;
 }
@@ -172,14 +160,24 @@ main div p{
     padding: 20px;
 }
 
-.equipo img{
+@keyframes mover{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-20px);}
+}
+
+.imgequipo{
     width: 150px;
     height: 150px;
     border: none;
     border-radius: 50%;
     box-shadow: 0px 0px 6px rgb(23, 86, 202);
     padding: 0px;
-    margin: 10px;
+    margin: 15px;
+}
+
+.imgequipo:hover{
+    animation: mover 2s ease;
+    box-shadow: 0 10px 10px rgb(100, 100, 210);
 }
 
 .nosotras{
@@ -193,6 +191,10 @@ main div p{
     padding: 20px;
 }
 
+.nosotras div h3{
+    transition: 0.5s;
+}
+
 .nosotras img{
     width:250px;
     height:250px;
@@ -202,22 +204,45 @@ main div p{
     margin-left: 100px;
 }
 
+.nosotras div h3:hover{
+    transform: scale(1.1);
+    color:blue;
+
+}
+
 .servicios{
     display: grid;
     grid-template-columns: 2fr 2fr;
     column-gap: 20px;
     row-gap: 60px;
     margin-left: 10%;
+    margin-top: 30px;
+    text-align: center;
 }
 
-.servicios img{
+.servicios div{
+    width: 400px;
+    height: 180px;
+    background-color: rgb(250, 246, 246);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    padding: 20px;
+}
+
+.servicios div:hover{
+    animation: mover 2s ease; 
+    box-shadow: 0 10px 10px rgb(100, 100, 210);
+}
+
+.imgservicios{
     width: 50px;
     height: 50px;
     border: none;
     border-radius: 50%;
     box-shadow: 0px 0px 6px rgb(23, 86, 202);
     padding:0px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .turnos{
@@ -225,6 +250,7 @@ main div p{
     grid-template-columns: 2fr 2fr;
     column-gap: 20px;
     justify-items: center;
+    height: 300px;
 }
 
 .turnos-form{
@@ -253,6 +279,12 @@ main div p{
     width: 50%;
     padding: 5px;
     margin: auto;
+    transition: 0.8 s ease;
+}
+
+.boton:hover{
+    background-color: rgb(201, 244, 244);
+    transform: scale(1.1);
 }
 
 
