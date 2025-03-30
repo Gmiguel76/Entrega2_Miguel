@@ -1,19 +1,3 @@
 $primary-color:rgb(174, 216, 244);
+
 $secondary-color:rgb(43, 98, 147);
-
-main {
-    display: grid;
-    grid-row: 100px 100px;
-    padding: 30px;
-    color: $secondary-color;  
-    background-color: $primary-color;
-}
-
-main h1, h2{
-    text-align: center;
-}
-
-main div p{
-    padding-top: 5px;
-    font-size: medium;
-}

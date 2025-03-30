@@ -4,5 +4,5 @@
 }
 
 .boton{
-    @include botones (rgb(201, 237, 252), medium)
+    @include botones (rgb(201, 237, 252), 'medium')
 }

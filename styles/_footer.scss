@@ -1,0 +1,31 @@
+footer{  
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(87, 168, 221);   
+}
+
+.p-f{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+    color: rgb(43, 98, 147);
+}
+
+.lif{  
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.lif a{ 
+    text-decoration: none;
+    color: rgb(43, 98, 147);
+    font-size:medium;
+    margin: 15px;
+}

@@ -1,11 +1,18 @@
-
-@use './styles/botones';
-
 @use './styles/mixin';
 
 @use './styles/variables';
 
-@use './styles/main'
+@use './styles/reset';
+
+@use './styles/header';
+
+@use './styles/body';
+
+@use './styles/footer';
+
+@use './styles/media'
+
+
 
 
 
