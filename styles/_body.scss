@@ -1,3 +1,7 @@
+@use 'variables' as v;
+
+@use 'mixin' as m;
+
 body{
     display: flex;
     flex-direction: column;
@@ -8,8 +12,8 @@ main {
     display: grid;
     grid-row: 100px 100px;
     padding: 30px;
-    color: rgb(43, 98, 147);
-    background-color: rgb(174, 216, 244);
+    color: v.$secondary-color;
+    background-color: v.$primary-color;
 }
 
 main h1, h2 {
@@ -33,7 +37,7 @@ main div p {
     height:250px;
     border: none;
     border-radius: 5%;
-    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    box-shadow: 0px 0px 6px v.$tertiary-color;
     margin: 50px 0 0 100px;
     transition: 0.5s;
 }
@@ -64,7 +68,7 @@ main div p {
     padding: 10px;
     border: none;
     border-radius: 3%;
-    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    box-shadow: 0px 0px 6px v.$tertiary-color;
     text-align: center;
 }
 
@@ -86,7 +90,7 @@ main div p {
     padding: 20px;
     border: none;
     border-radius: 3%;
-    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    box-shadow: 0px 0px 6px v.$tertiary-color;
     text-align: center;
 }
 
@@ -101,13 +105,13 @@ main div p {
     flex-direction: column;
     margin: auto;
     width:400px;
-    color: rgb(43, 98, 147);  
+    color: v.$secondary-color;  
     font-size: medium;
 }
 
 .contacto iframe{
     border: none;
-    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    box-shadow: 0px 0px 6px v.$tertiary-color;
     margin: 20px;
 }
 
@@ -140,14 +144,14 @@ main div p {
     height: 150px;
     border: none;
     border-radius: 50%;
-    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    box-shadow: 0px 0px 6px v.$tertiary-color;
     padding: 0px;
     margin: 15px;
 }
 
 .imgequipo:hover{
     animation: mover 2s ease;
-    box-shadow: 0 10px 10px rgb(100, 100, 210);
+    box-shadow: 0 10px 10px rgb(128, 195, 253);
 }
 
 .nosotras{
@@ -171,14 +175,18 @@ main div p {
     height:250px;
     border: none;
     border-radius: 5%;
-    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    box-shadow: 0px 0px 6px v.$tertiary-color;
     margin-left: 100px;
+    transition: 0.5s;
+}
+
+.nosotras img:hover{
+    transform:scale(1.2);  
 }
 
 .nosotras div h3:hover{
     transform: scale(1.1);
-    color:blue;
-
+    color:rgb(1, 1, 49);
 }
 
 .servicios{
@@ -197,13 +205,13 @@ main div p {
     background-color: rgb(250, 246, 246);
     border: none;
     border-radius: 10px;
-    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    box-shadow: 0px 0px 6px v.$tertiary-color;
     padding: 20px;
 }
 
 .servicios div:hover{
     animation: mover 2s ease; 
-    box-shadow: 0 10px 10px rgb(100, 100, 210);
+    box-shadow: 0 10px 10px rgb(128, 195, 253)
 }
 
 .imgservicios{
@@ -211,7 +219,7 @@ main div p {
     height: 50px;
     border: none;
     border-radius: 50%;
-    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    box-shadow: 0px 0px 6px v.$tertiary-color;
     padding:0px;
     margin: 5px;
 }
@@ -221,7 +229,7 @@ main div p {
     grid-template-columns: 2fr 2fr;
     column-gap: 20px;
     justify-items: center;
-    height: 400px;
+    height: 300px;
 }
 
 .turnos-form{
@@ -229,7 +237,7 @@ main div p {
     flex-direction: column;
     margin: auto;
     width: 300px;
-    color: rgb(43, 98, 147);  
+    color: v.$secondary-color;  
     font-size: medium;
     padding: 20px; 
     margin: 20px;
@@ -241,12 +249,11 @@ main div p {
 }
 
 .boton{
-    background-color: rgb(201, 237, 252);
-    color: rgb(43, 98, 147);
-    font-size:medium;
+    @include m.botones (rgb(201, 237, 252), 'medium');
+    color: v.$secondary-color;
     border: none;
     border-radius: 5px;  
-    box-shadow: 0px 0px 6px rgb(23, 86, 202);
+    box-shadow: 0px 0px 6px v.$tertiary-color;
     width: 50%;
     padding: 5px;
     margin: auto;

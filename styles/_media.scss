@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 @media  (max-width: 500px) {
     header{
         flex-direction: column;
@@ -8,7 +10,7 @@
     }
 
 .nav-item a{
-    color: rgb(43, 98, 147);
+    color: v.$secondary-color;
     font-size: large;
     }
 

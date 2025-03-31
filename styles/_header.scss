@@ -1,10 +1,13 @@
+@use 'variables' as v;
+
+
 header{
     display:flex;
     justify-content:space-around;
     align-items: center;   
     padding: 10px;
     background-color: rgb(87, 168, 221);
-    color: rgb(43, 98, 147);
+    color: v.$secondary-color;
 }
 
 .logo{
@@ -33,6 +36,6 @@ a:hover{
 }
 
 .btn{
-    color: rgb(43, 98, 147);
+    color: v.$secondary-color;
     box-shadow: 0px 0px 6px rgb(23, 86, 202);
 }
